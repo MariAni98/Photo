@@ -345,15 +345,15 @@
 /* hero */
 
 .swiper__hero-image-one {
-  background-image: url(../img/hero-1.jpg);
+  background-image: url(../img/hero-1.webp);
 }
 
 .swiper__hero-image-two {
-  background-image: url(../img/hero-2.jpg);
+  background-image: url(../img/hero-2.webp);
 }
 
 .swiper__hero-image-three {
-  background-image: url(../img/hero-3.jpg);
+  background-image: url(../img/hero-3.webp);
 }
 
 .top-wrapper .swiper {
@@ -443,7 +443,7 @@
 /* gallery */
 
 .gallery {
-  background-image: url(../img/galary-fone.jpg);
+  background-image: url(../img/galary-fone.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -823,9 +823,9 @@
   cursor: auto;
 }
 
-.gallery .swiper-button-disabled:hover,
-.gallery .swiper-button-disabled:focus,
-.gallery .swiper-button-disabled:active {
+.swiper-button-disabled:hover,
+.swiper-button-disabled:focus,
+.swiper-button-disabled:active {
   background-color: var(--color-gray);
 }
 
@@ -1264,7 +1264,7 @@
 /* editions */
 
 .editions {
-  background-image: url(../img/edition-fone.jpg);
+  background-image: url(../img/edition-fone.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2543,15 +2543,15 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .swiper__hero-image-one {
-    background-image: url(../img/hero2-1.jpg);
+    background-image: url(../img/hero2-1.webp);
   }
 
   .swiper__hero-image-two {
-    background-image: url(../img/hero2-2.jpg);
+    background-image: url(../img/hero2-2.webp);
   }
 
   .swiper__hero-image-three {
-    background-image: url(../img/hero2-3.jpg);
+    background-image: url(../img/hero2-3.webp);
   }
 
   .hero__title {
@@ -2727,7 +2727,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .editions {
-    background-image: url(../img/edition-fone1024.jpg);
+    background-image: url(../img/edition-fone1024.webp);
   }
 
   .editions__container {
@@ -3026,15 +3026,15 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .swiper__hero-image-one {
-    background-image: url(../img/hero3-1.jpg);
+    background-image: url(../img/hero3-1.webp);
   }
 
   .swiper__hero-image-two {
-    background-image: url(../img/hero3-2.jpg);
+    background-image: url(../img/hero3-2.webp);
   }
 
   .swiper__hero-image-three {
-    background-image: url(../img/hero3-3.jpg);
+    background-image: url(../img/hero3-3.webp);
   }
 
   .hero__title {
@@ -3232,7 +3232,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .editions {
-    background-image: url(../img/edition-fone768.jpg);
+    background-image: url(../img/edition-fone768.webp);
   }
 
   .editions__container {
@@ -3914,15 +3914,15 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .swiper__hero-image-one {
-    background-image: url(../img/hero-320-1.jpg);
+    background-image: url(../img/hero-320-1.webp);
   }
 
   .swiper__hero-image-two {
-    background-image: url(../img/hero-320-2.jpg);
+    background-image: url(../img/hero-320-2.webp);
   }
 
   .swiper__hero-image-three {
-    background-image: url(../img/hero-320-3.jpg);
+    background-image: url(../img/hero-320-3.webp);
   }
 
   .hero__title {
@@ -4172,7 +4172,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .editions {
-    background-image: url(../img/edition-fone320.jpg);
+    background-image: url(../img/edition-fone320.webp);
     background-size: cover;
     background-repeat: no-repeat;
   }

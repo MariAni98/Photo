@@ -5,6 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blanchard — художественная галерея</title>
+
+  <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font">
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/OpenSans-Italic.woff2" as="font">
+  <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font">
+
+  <!-- css -->
   <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/header-swiper.css" rel="stylesheet">
@@ -12,7 +20,22 @@
   <link href="css/gallery-swiper.css" rel="stylesheet">
   <link href="css/choices.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <title>Blanchard — художественная галерея</title>
+
+  <!-- js -->
+  <script defer src="js/header-swiper.min.js"></script>
+  <script defer src="js/setting.js"></script>
+  <script defer src="js/simplebar.min.js"></script>
+  <script defer src="js/burger.js"></script>
+  <script defer src="js/choices.min.js"></script>
+  <script defer src="js/accordion.min.js"></script>
+  <script defer src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <script defer src="js/gallery-swiper.min.js"></script>
+  <script defer src="js/inputmask.min.js"></script>
+  <script defer src="js/just-validate.min.js"></script>
+  <script defer src="js/popper.min.js"></script>
+  <script defer src="js/tooltip.min.js"></script>
+  <script defer src="https://api-maps.yandex.ru/2.1/?&lang=ru_RU"></script>
+  <script defer src="js/file.js"></script>
 </head>
 
 <body>
@@ -149,42 +172,42 @@
                   <div class="header__dropdown-wrap" data-simplebar>
                     <ul class="header__drop-list list-reset">
                       <li class="header__dropdown-item">
-                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Tintoretto.jpg);">
+                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Tintoretto.webp);">
                           <span class="header__dropdown-link-text">
                             Тинторрето
                           </span>
                         </a>
                       </li>
                       <li class="header__dropdown-item">
-                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Frederick.jpg);">
+                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Frederick.webp);">
                           <span class="header__dropdown-link-text">
                             Фридрих
                           </span>
                         </a>
                       </li>
                       <li class="header__dropdown-item">
-                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Leonardo.jpg);">
+                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Leonardo.webp);">
                           <span class="header__dropdown-link-text">
                             Леонардо
                           </span>
                         </a>
                       </li>
                       <li class="header__dropdown-item">
-                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Verrocchio.jpg);">
+                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Verrocchio.webp);">
                           <span class="header__dropdown-link-text">
                             Верроккьо
                           </span>
                         </a>
                       </li>
                       <li class="header__dropdown-item">
-                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Tintoretto.jpg);">
+                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Tintoretto.webp);">
                           <span class="header__dropdown-link-text">
                             Тинторрето
                           </span>
                         </a>
                       </li>
                       <li class="header__dropdown-item">
-                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Tintoretto.jpg);">
+                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Tintoretto.webp);">
                           <span class="header__dropdown-link-text">
                             Тинторрето
                           </span>
@@ -205,28 +228,28 @@
                   <div class="header__dropdown-wrap" data-simplebar>
                     <ul class="header__drop-list list-reset">
                       <li class="header__dropdown-item">
-                        <a class="header__dropdown-link" href="#" style="background-image: url(img/mone.jpg);">
+                        <a class="header__dropdown-link" href="#" style="background-image: url(img/mone.webp);">
                           <span class="header__dropdown-link-text">
                             Моне
                           </span>
                         </a>
                       </li>
                       <li class="header__dropdown-item">
-                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Sisley.jpg);">
+                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Sisley.webp);">
                           <span class="header__dropdown-link-text">
                             Сислей
                           </span>
                         </a>
                       </li>
                       <li class="header__dropdown-item">
-                        <a class="header__dropdown-link" href="#" style="background-image: url(img/mane.jpg);">
+                        <a class="header__dropdown-link" href="#" style="background-image: url(img/mane.webp);">
                           <span class="header__dropdown-link-text">
                             Мане
                           </span>
                         </a>
                       </li>
                       <li class="header__dropdown-item">
-                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Renoir.jpg);">
+                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Renoir.webp);">
                           <span class="header__dropdown-link-text">
                             Ренуар
                           </span>
@@ -248,28 +271,28 @@
                   <div class="header__dropdown-wrap" data-simplebar>
                     <ul class="header__drop-list list-reset">
                       <li class="header__dropdown-item">
-                        <a class="header__dropdown-link" href="#" style="background-image: url(img/VanGogh.jpg)">
+                        <a class="header__dropdown-link" href="#" style="background-image: url(img/VanGogh.webp)">
                           <span class="header__dropdown-link-text">
                             Ван Гог
                           </span>
                         </a>
                       </li>
                       <li class="header__dropdown-item">
-                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Cezanne.jpg)">
+                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Cezanne.webp)">
                           <span class="header__dropdown-link-text">
                             Сезанн
                           </span>
                         </a>
                       </li>
                       <li class="header__dropdown-item">
-                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Gauguin.jpg)">
+                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Gauguin.webp)">
                           <span class="header__dropdown-link-text">
                             Гоген
                           </span>
                         </a>
                       </li>
                       <li class="header__dropdown-item">
-                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Sulfur.jpg)">
+                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Sulfur.webp)">
                           <span class="header__dropdown-link-text">
                             Сёра
                           </span>
@@ -291,28 +314,28 @@
                   <div class="header__dropdown-wrap" data-simplebar>
                     <ul class="header__drop-list list-reset">
                       <li class="header__dropdown-item">
-                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Kandinsky.jpg)">
+                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Kandinsky.webp)">
                           <span class="header__dropdown-link-text">
                             Кандинский
                           </span>
                         </a>
                       </li>
                       <li class="header__dropdown-item">
-                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Marinetti.jpg)">
+                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Marinetti.webp)">
                           <span class="header__dropdown-link-text">
                             Маринетти
                           </span>
                         </a>
                       </li>
                       <li class="header__dropdown-item">
-                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Malevich.jpg)">
+                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Malevich.webp)">
                           <span class="header__dropdown-link-text">
                             Малевич
                           </span>
                         </a>
                       </li>
                       <li class="header__dropdown-item">
-                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Picasso.jpg)">
+                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Picasso.webp)">
                           <span class="header__dropdown-link-text">
                             Пикассо
                           </span>
@@ -333,28 +356,28 @@
                   <div class="header__dropdown-wrap" data-simplebar>
                     <ul class="header__drop-list list-reset">
                       <li class="header__dropdown-item">
-                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Carra.jpg)">
+                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Carra.webp)">
                           <span class="header__dropdown-link-text">
                             Карра
                           </span>
                         </a>
                       </li>
                       <li class="header__dropdown-item">
-                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Pratella.jpg)">
+                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Pratella.webp)">
                           <span class="header__dropdown-link-text">
                             Прателла
                           </span>
                         </a>
                       </li>
                       <li class="header__dropdown-item">
-                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Sisley.jpg)">
+                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Sisley.webp)">
                           <span class="header__dropdown-link-text">
                             Северини
                           </span>
                         </a>
                       </li>
                       <li class="header__dropdown-item">
-                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Balla.jpg)">
+                        <a class="header__dropdown-link" href="#" style="background-image: url(img/Balla.webp)">
                           <span class="header__dropdown-link-text">
                             Балла
                           </span>
@@ -457,193 +480,193 @@
               <button class="gallery__slide-modal-btn btn-reset swiper-slide gallery__slide" data-active="gallery-one"
                 aria-label="Слайд 1">
                 <picture>
-                  <source srcset="img/1.jpg" media="(min-width: 420px)">
-                  <source srcset="img/Gallery-1.jpg" media="(min-width: 320px)">
-                  <img class="gallery__image" src="img/1.jpg" alt="Картина 1">
+                  <source srcset="img/1.webp" media="(min-width: 420px)">
+                  <source srcset="img/Gallery-1.webp" media="(min-width: 320px)">
+                  <img class="gallery__image" src="img/1.webp" alt="Картина 1">
                 </picture>
               </button>
               <button class="gallery__slide-modal-btn btn-reset swiper-slide gallery__slide" data-active="gallery-one"
                 aria-label="Слайд 2">
                 <picture>
-                  <source srcset="img/2.jpg" media="(min-width: 420px)">
-                  <source srcset="img/Gallery-2.jpg" media="(min-width: 320px)">
-                  <img class="gallery__image" src="img/2.jpg" alt="Картина 2">
+                  <source srcset="img/2.webp" media="(min-width: 420px)">
+                  <source srcset="img/Gallery-2.webp" media="(min-width: 320px)">
+                  <img class="gallery__image" src="img/2.webp" alt="Картина 2">
                 </picture>
               </button>
               <button class="gallery__slide-modal-btn btn-reset swiper-slide gallery__slide" data-active="gallery-one"
                 aria-label="Слайд 3">
                 <picture>
-                  <source srcset="img/3.jpg" media="(min-width: 420px)">
-                  <source srcset="img/Gallery-3.jpg" media="(min-width: 320px)">
-                  <img class="gallery__image" src="img/3.jpg" alt="Картина 3">
+                  <source srcset="img/3.webp" media="(min-width: 420px)">
+                  <source srcset="img/Gallery-3.webp" media="(min-width: 320px)">
+                  <img class="gallery__image" src="img/3.webp" alt="Картина 3">
                 </picture>
               </button>
               <button class="gallery__slide-modal-btn btn-reset swiper-slide gallery__slide" data-active="gallery-one"
                 aria-label="Слайд 4">
                 <picture>
-                  <source srcset="img/4.jpg" media="(min-width: 420px)">
-                  <source srcset="img/Gallery-4.jpg" media="(min-width: 320px)">
-                  <img class="gallery__image" src="img/4.jpg" alt="Картина 4">
+                  <source srcset="img/4.webp" media="(min-width: 420px)">
+                  <source srcset="img/Gallery-4.webp" media="(min-width: 320px)">
+                  <img class="gallery__image" src="img/4.webp" alt="Картина 4">
                 </picture>
               </button>
               <button class="gallery__slide-modal-btn btn-reset swiper-slide gallery__slide" data-active="gallery-one"
                 aria-label="Слайд 5">
                 <picture>
-                  <source srcset="img/5.jpg" media="(min-width: 420px)">
-                  <source srcset="img/Gallery-5.jpg" media="(min-width: 320px)">
-                  <img class="gallery__image" src="img/5.jpg" alt="Картина 5">
+                  <source srcset="img/5.webp" media="(min-width: 420px)">
+                  <source srcset="img/Gallery-5.webp" media="(min-width: 320px)">
+                  <img class="gallery__image" src="img/5.webp" alt="Картина 5">
                 </picture>
               </button>
               <button class="gallery__slide-modal-btn btn-reset swiper-slide gallery__slide" data-active="gallery-one"
                 aria-label="Слайд 6">
                 <picture>
-                  <source srcset="img/6.jpg" media="(min-width: 420px)">
-                  <source srcset="img/Gallery-6.jpg" media="(min-width: 320px)">
-                  <img class="gallery__image" src="img/6.jpg" alt="Картина 6">
+                  <source srcset="img/6.webp" media="(min-width: 420px)">
+                  <source srcset="img/Gallery-6.webp" media="(min-width: 320px)">
+                  <img class="gallery__image" src="img/6.webp" alt="Картина 6">
                 </picture>
               </button>
               <button class="gallery__slide-modal-btn btn-reset swiper-slide gallery__slide" data-active="gallery-one"
                 aria-label="Слайд 7">
                 <picture>
-                  <source srcset="img/7.jpg" media="(min-width: 420px)">
-                  <source srcset="img/Gallery-7.jpg" media="(min-width: 320px)">
-                  <img class="gallery__image" src="img/7.jpg" alt="Картина 7">
+                  <source srcset="img/7.webp" media="(min-width: 420px)">
+                  <source srcset="img/Gallery-7.webp" media="(min-width: 320px)">
+                  <img class="gallery__image" src="img/7.webp" alt="Картина 7">
                 </picture>
               </button>
               <button class="gallery__slide-modal-btn btn-reset swiper-slide gallery__slide" data-active="gallery-one"
                 aria-label="Слайд 8">
                 <picture>
-                  <source srcset="img/8.jpg" media="(min-width: 420px)">
-                  <source srcset="img/Gallery-8.jpg" media="(min-width: 320px)">
-                  <img class="gallery__image" src="img/8.jpg" alt="Картина 8">
+                  <source srcset="img/8.webp" media="(min-width: 420px)">
+                  <source srcset="img/Gallery-8.webp" media="(min-width: 320px)">
+                  <img class="gallery__image" src="img/8.webp" alt="Картина 8">
                 </picture>
               </button>
               <button class="gallery__slide-modal-btn btn-reset swiper-slide gallery__slide" data-active="gallery-one"
                 aria-label="Слайд 9">
                 <picture>
-                  <source srcset="img/9.jpg" media="(min-width: 420px)">
-                  <source srcset="img/Gallery-9.jpg" media="(min-width: 320px)">
-                  <img class="gallery__image" src="img/9.jpg" alt="Картина 9">
+                  <source srcset="img/9.webp" media="(min-width: 420px)">
+                  <source srcset="img/Gallery-9.webp" media="(min-width: 320px)">
+                  <img class="gallery__image" src="img/9.webp" alt="Картина 9">
                 </picture>
               </button>
               <button class="gallery__slide-modal-btn btn-reset swiper-slide gallery__slide" data-active="gallery-one"
                 aria-label="Слайд 10">
                 <picture>
-                  <source srcset="img/10.jpg" media="(min-width: 420px)">
-                  <source srcset="img/Gallery-10.jpg" media="(min-width: 320px)">
-                  <img class="gallery__image" src="img/10.jpg" alt="Картина 10">
+                  <source srcset="img/10.webp" media="(min-width: 420px)">
+                  <source srcset="img/Gallery-10.webp" media="(min-width: 320px)">
+                  <img class="gallery__image" src="img/10.webp" alt="Картина 10">
                 </picture>
               </button>
               <button class="gallery__slide-modal-btn btn-reset swiper-slide gallery__slide" data-active="gallery-one"
                 aria-label="Слайд 11">
                 <picture>
-                  <source srcset="img/11.jpg" media="(min-width: 420px)">
-                  <source srcset="img/Gallery-11.jpg" media="(min-width: 320px)">
-                  <img class="gallery__image" src="img/11.jpg" alt="Картина 11">
+                  <source srcset="img/11.webp" media="(min-width: 420px)">
+                  <source srcset="img/Gallery-11.webp" media="(min-width: 320px)">
+                  <img class="gallery__image" src="img/11.webp" alt="Картина 11">
                 </picture>
               </button>
               <button class="gallery__slide-modal-btn btn-reset swiper-slide gallery__slide" data-active="gallery-one"
                 aria-label="Слайд 12">
                 <picture>
-                  <source srcset="img/12.jpg" media="(min-width: 420px)">
-                  <source srcset="img/Gallery-12.jpg" media="(min-width: 320px)">
-                  <img class="gallery__image" src="img/12.jpg" alt="Картина 12">
+                  <source srcset="img/12.webp" media="(min-width: 420px)">
+                  <source srcset="img/Gallery-12.webp" media="(min-width: 320px)">
+                  <img class="gallery__image" src="img/12.webp" alt="Картина 12">
                 </picture>
               </button>
               <button class="gallery__slide-modal-btn btn-reset swiper-slide gallery__slide" data-active="gallery-one"
                 aria-label="Слайд 13">
                 <picture>
-                  <source srcset="img/13.jpg" media="(min-width: 420px)">
-                  <source srcset="img/Gallery-13.jpg" media="(min-width: 320px)">
-                  <img class="gallery__image" src="img/13.jpg" alt="Картина 13">
+                  <source srcset="img/13.webp" media="(min-width: 420px)">
+                  <source srcset="img/Gallery-13.webp" media="(min-width: 320px)">
+                  <img class="gallery__image" src="img/13.webp" alt="Картина 13">
                 </picture>
               </button>
               <button class="gallery__slide-modal-btn btn-reset swiper-slide gallery__slide" data-active="gallery-one"
                 aria-label="Слайд 14">
                 <picture>
-                  <source srcset="img/14.jpg" media="(min-width: 420px)">
-                  <source srcset="img/Gallery-14.jpg" media="(min-width: 320px)">
-                  <img class="gallery__image" src="img/14.jpg" alt="Картина 14">
+                  <source srcset="img/14.webp" media="(min-width: 420px)">
+                  <source srcset="img/Gallery-14.webp" media="(min-width: 320px)">
+                  <img class="gallery__image" src="img/14.webp" alt="Картина 14">
                 </picture>
               </button>
               <button class="gallery__slide-modal-btn btn-reset swiper-slide gallery__slide" data-active="gallery-one"
                 aria-label="Слайд 15">
                 <picture>
-                  <source srcset="img/15.jpg" media="(min-width: 420px)">
-                  <source srcset="img/Gallery-15.jpg" media="(min-width: 320px)">
-                  <img class="gallery__image" src="img/15.jpg" alt="Картина 15">
+                  <source srcset="img/15.webp" media="(min-width: 420px)">
+                  <source srcset="img/Gallery-15.webp" media="(min-width: 320px)">
+                  <img class="gallery__image" src="img/15.webp" alt="Картина 15">
                 </picture>
               </button>
               <button class="gallery__slide-modal-btn btn-reset swiper-slide gallery__slide" data-active="gallery-one"
                 aria-label="Слайд 16">
                 <picture>
-                  <source srcset="img/16.jpg" media="(min-width: 420px)">
-                  <source srcset="img/Gallery-16.jpg" media="(min-width: 320px)">
-                  <img class="gallery__image" src="img/16.jpg" alt="Картина 16">
+                  <source srcset="img/16.webp" media="(min-width: 420px)">
+                  <source srcset="img/Gallery-16.webp" media="(min-width: 320px)">
+                  <img class="gallery__image" src="img/16.webp" alt="Картина 16">
                 </picture>
               </button>
               <button class="gallery__slide-modal-btn btn-reset swiper-slide gallery__slide" data-active="gallery-one"
                 aria-label="Слайд 17">
                 <picture>
-                  <source srcset="img/17.jpg" media="(min-width: 420px)">
-                  <source srcset="img/Gallery-17.jpg" media="(min-width: 320px)">
-                  <img class="gallery__image" src="img/17.jpg" alt="Картина 17">
+                  <source srcset="img/17.webp" media="(min-width: 420px)">
+                  <source srcset="img/Gallery-17.webp" media="(min-width: 320px)">
+                  <img class="gallery__image" src="img/17.webp" alt="Картина 17">
                 </picture>
               </button>
               <button class="gallery__slide-modal-btn btn-reset swiper-slide gallery__slide" data-active="gallery-one"
                 aria-label="Слайд 18">
                 <picture>
-                  <source srcset="img/18.jpg" media="(min-width: 420px)">
-                  <source srcset="img/Gallery-18.jpg" media="(min-width: 320px)">
-                  <img class="gallery__image" src="img/18.jpg" alt="Картина 18">
+                  <source srcset="img/18.webp" media="(min-width: 420px)">
+                  <source srcset="img/Gallery-18.webp" media="(min-width: 320px)">
+                  <img class="gallery__image" src="img/18.webp" alt="Картина 18">
                 </picture>
               </button>
               <button class="gallery__slide-modal-btn btn-reset swiper-slide gallery__slide" data-active="gallery-one"
                 aria-label="Слайд 19">
                 <picture>
-                  <source srcset="img/19.jpg" media="(min-width: 420px)">
-                  <source srcset="img/Gallery-19.jpg" media="(min-width: 320px)">
-                  <img class="gallery__image" src="img/19.jpg" alt="Картина 19">
+                  <source srcset="img/19.webp" media="(min-width: 420px)">
+                  <source srcset="img/Gallery-19.webp" media="(min-width: 320px)">
+                  <img class="gallery__image" src="img/19.webp" alt="Картина 19">
                 </picture>
               </button>
               <button class="gallery__slide-modal-btn btn-reset swiper-slide gallery__slide" data-active="gallery-one"
                 aria-label="Слайд 20">
                 <picture>
-                  <source srcset="img/20.jpg" media="(min-width: 420px)">
-                  <source srcset="img/Gallery-20.jpg" media="(min-width: 320px)">
-                  <img class="gallery__image" src="img/20.jpg" alt="Картина 20">
+                  <source srcset="img/20.webp" media="(min-width: 420px)">
+                  <source srcset="img/Gallery-20.webp" media="(min-width: 320px)">
+                  <img class="gallery__image" src="img/20.webp" alt="Картина 20">
                 </picture>
               </button>
               <button class="gallery__slide-modal-btn btn-reset swiper-slide gallery__slide" data-active="gallery-one"
                 aria-label="Слайд 21">
                 <picture>
-                  <source srcset="img/21.jpg" media="(min-width: 420px)">
-                  <source srcset="img/Gallery-21.jpg" media="(min-width: 320px)">
-                  <img class="gallery__image" src="img/21.jpg" alt="Картина 21">
+                  <source srcset="img/21.webp" media="(min-width: 420px)">
+                  <source srcset="img/Gallery-21.webp" media="(min-width: 320px)">
+                  <img class="gallery__image" src="img/21.webp" alt="Картина 21">
                 </picture>
               </button>
               <button class="gallery__slide-modal-btn btn-reset swiper-slide gallery__slide" data-active="gallery-one"
                 aria-label="Слайд 22">
                 <picture>
-                  <source srcset="img/22.jpg" media="(min-width: 420px)">
-                  <source srcset="img/Gallery-22.jpg" media="(min-width: 320px)">
-                  <img class="gallery__image" src="img/22.jpg" alt="Картина 22">
+                  <source srcset="img/22.webp" media="(min-width: 420px)">
+                  <source srcset="img/Gallery-22.webp" media="(min-width: 320px)">
+                  <img class="gallery__image" src="img/22.webp" alt="Картина 22">
                 </picture>
               </button>
               <button class="gallery__slide-modal-btn btn-reset swiper-slide gallery__slide" data-active="gallery-one"
                 aria-label="Слайд 23">
                 <picture>
-                  <source srcset="img/23.jpg" media="(min-width: 420px)">
-                  <source srcset="img/Gallery-23.jpg" media="(min-width: 320px)">
-                  <img class="gallery__image" src="img/23.jpg" alt="Картина 23">
+                  <source srcset="img/23.webp" media="(min-width: 420px)">
+                  <source srcset="img/Gallery-23.webp" media="(min-width: 320px)">
+                  <img class="gallery__image" src="img/23.webp" alt="Картина 23">
                 </picture>
               </button>
               <button class="gallery__slide-modal-btn btn-reset swiper-slide gallery__slide" data-active="gallery-one"
                 aria-label="Слайд 24">
                 <picture>
-                  <source srcset="img/24.jpg" media="(min-width: 420px)">
-                  <source srcset="img/Gallery-24.jpg" media="(min-width: 320px)">
-                  <img class="gallery__image" src="img/24.jpg" alt="Картина 24">
+                  <source srcset="img/24.webp" media="(min-width: 420px)">
+                  <source srcset="img/Gallery-24.webp" media="(min-width: 320px)">
+                  <img class="gallery__image" src="img/24.webp" alt="Картина 24">
                 </picture>
               </button>
             </div>
@@ -654,10 +677,10 @@
             <div class="gallery__modal gallery__modal-1" data-gallery="gallery-one">
               <div class="gallery__modal-left">
                 <picture>
-                  <source srcset="img/modal.jpg" media="(min-width: 1360px)">
-                  <source srcset="img/modal-1024.jpg" media="(min-width: 850px)">
-                  <source srcset="img/modal-768.jpg" media="(min-width: 600px)">
-                  <img class="gallery__modal-image" src="img/modal.jpg" alt="Картина 1">
+                  <source srcset="img/modal.webp" media="(min-width: 1360px)">
+                  <source srcset="img/modal-1024.webp" media="(min-width: 850px)">
+                  <source srcset="img/modal-768.webp" media="(min-width: 600px)">
+                  <img class="gallery__modal-image" src="img/modal.webp" alt="Картина 1">
                 </picture>
               </div>
               <div class="gallery__modal-right flex">
@@ -709,7 +732,7 @@
         <div class="catalog__bottom flex">
 
           <div class="catalog__bottom-left" data-target="none" id="none">
-            <img src="img/X.jpg" alt="Х - Художник">
+            <img src="img/X.webp" alt="Х - Художник">
             <h3 class="catalog__left-title">
               Что мы о нём знаем?
             </h3>
@@ -724,7 +747,7 @@
           </div>
 
           <div class="catalog__bottom-left catalog__bottom-left-active" data-target="domenico" id="domenico">
-            <img src="img/domenico.jpg" alt="Доменико Гирландайо">
+            <img src="img/domenico.webp" alt="Доменико Гирландайо">
             <h3 class="catalog__left-title">
               Доменико Гирландайо
             </h3>
@@ -1109,11 +1132,11 @@
 
               <article class="developments__slide">
                 <picture>
-                  <source srcset="img/engraving.jpg" media="(min-width: 1028px)">
-                  <source srcset="img/engraving1024.jpg" media="(min-width: 1001px)">
-                  <source srcset="img/engraving.jpg" media="(min-width: 850px)">
-                  <source srcset="img/engraving768.jpg" media="(min-width: 600px)">
-                  <img src="img/engraving1.jpg" alt="Гравюра">
+                  <source srcset="img/engraving.webp" media="(min-width: 1028px)">
+                  <source srcset="img/engraving1024.webp" media="(min-width: 1001px)">
+                  <source srcset="img/engraving.webp" media="(min-width: 850px)">
+                  <source srcset="img/engraving768.webp" media="(min-width: 600px)">
+                  <img src="img/engraving1.webp" alt="Гравюра">
                 </picture>
                 <div class="developments__content">
                   <span class="developments__span">
@@ -1139,11 +1162,11 @@
 
               <article class="developments__slide">
                 <picture>
-                  <source srcset="img/Petrov.jpg" media="(min-width: 1028px)">
-                  <source srcset="img/Petrov1024.jpg" media="(min-width: 1001px)">
-                  <source srcset="img/Petrov.jpg" media="(min-width: 850px)">
-                  <source srcset="img/Petrov768.jpg" media="(min-width: 600px)">
-                  <img src="img/Petrov1.jpg" alt="Дмитрий Петров и Сергей Ильин">
+                  <source srcset="img/Petrov.webp" media="(min-width: 1028px)">
+                  <source srcset="img/Petrov1024.webp" media="(min-width: 1001px)">
+                  <source srcset="img/Petrov.webp" media="(min-width: 850px)">
+                  <source srcset="img/Petrov768.webp" media="(min-width: 600px)">
+                  <img src="img/Petrov1.webp" alt="Дмитрий Петров и Сергей Ильин">
                 </picture>
                 <div class="developments__content">
                   <span class="developments__span">
@@ -1169,11 +1192,11 @@
 
               <article class="developments__slide">
                 <picture>
-                  <source srcset="img/Exhibition.jpg" media="(min-width: 1028px)">
-                  <source srcset="img/Exhibition1024.jpg" media="(min-width: 1001px)">
-                  <source srcset="img/Exhibition.jpg" media="(min-width: 850px)">
-                  <source srcset="img/Exhibition768.jpg" media="(min-width: 600px)">
-                  <img src="img/Exhibition1.jpg" alt="Выставка «Формация 2020»">
+                  <source srcset="img/Exhibition.webp" media="(min-width: 1028px)">
+                  <source srcset="img/Exhibition1024.webp" media="(min-width: 1001px)">
+                  <source srcset="img/Exhibition.webp" media="(min-width: 850px)">
+                  <source srcset="img/Exhibition768.webp" media="(min-width: 600px)">
+                  <img src="img/Exhibition1.webp" alt="Выставка «Формация 2020»">
                 </picture>
                 <div class="developments__content">
                   <span class="developments__span">
@@ -1199,11 +1222,11 @@
 
               <article class="developments__slide">
                 <picture>
-                  <source srcset="img/biennale.jpg" media="(min-width: 1028px)">
-                  <source srcset="img/biennale1024.jpg" media="(min-width: 1001px)">
-                  <source srcset="img/biennale.jpg" media="(min-width: 850px)">
-                  <source srcset="img/biennale768.jpg" media="(min-width: 600px)">
-                  <img src="img/biennale1.jpg" alt="Биеннале">
+                  <source srcset="img/biennale.webp" media="(min-width: 1028px)">
+                  <source srcset="img/biennale1024.webp" media="(min-width: 1001px)">
+                  <source srcset="img/biennale.webp" media="(min-width: 850px)">
+                  <source srcset="img/biennale768.webp" media="(min-width: 600px)">
+                  <img src="img/biennale1.webp" alt="Биеннале">
                 </picture>
                 <div class="developments__content">
                   <span class="developments__span">
@@ -1225,11 +1248,11 @@
 
               <article class="developments__slide">
                 <picture>
-                  <source srcset="img/silver.jpg" media="(min-width: 1028px)">
-                  <source srcset="img/silver1024.jpg" media="(min-width: 1001px)">
-                  <source srcset="img/silver.jpg" media="(min-width: 850px)">
-                  <source srcset="img/silver768.jpg" media="(min-width: 600px)">
-                  <img src="img/silver1.jpg" alt="Метафора серебра">
+                  <source srcset="img/silver.webp" media="(min-width: 1028px)">
+                  <source srcset="img/silver1024.webp" media="(min-width: 1001px)">
+                  <source srcset="img/silver.webp" media="(min-width: 850px)">
+                  <source srcset="img/silver768.webp" media="(min-width: 600px)">
+                  <img src="img/silver1.webp" alt="Метафора серебра">
                 </picture>
                 <div class="developments__content">
                   <span class="developments__span">
@@ -1400,8 +1423,8 @@
               <div class="editions__slides-wrap js-editions-slides-wrap">
                 <div class="editions__slide">
                   <picture>
-                    <source srcset="img/editions-1.jpg" media="(min-width: 1920px)">
-                    <img class="editions-image" src="img/editions-1.jpg" alt>
+                    <source srcset="img/editions-1.webp" media="(min-width: 1920px)">
+                    <img class="editions-image" src="img/editions-1.webp" alt>
                   </picture>
                   <div class="slide-content flex">
                     <h3 class="editions__right-title">
@@ -1419,8 +1442,8 @@
 
                 <div class="editions__slide">
                   <picture>
-                    <source srcset="img/editions-2.jpg" media="(min-width: 1920px)">
-                    <img class="editions-image" src="img/editions-2.jpg" alt>
+                    <source srcset="img/editions-2.webp" media="(min-width: 1920px)">
+                    <img class="editions-image" src="img/editions-2.webp" alt>
                   </picture>
                   <div class="slide-content flex">
                     <h3 class="editions__right-title">
@@ -1438,8 +1461,8 @@
 
                 <div class="editions__slide">
                   <picture>
-                    <source srcset="img/editions-3.jpg" media="(min-width: 1920px)">
-                    <img class="editions-image" src="img/editions-3.jpg" alt>
+                    <source srcset="img/editions-3.webp" media="(min-width: 1920px)">
+                    <img class="editions-image" src="img/editions-3.webp" alt>
                   </picture>
                   <div class="slide-content flex">
                     <h3 class="editions__right-title">
@@ -1457,8 +1480,8 @@
 
                 <div class="editions__slide">
                   <picture>
-                    <source srcset="img/editions-4.jpg" media="(min-width: 1920px)">
-                    <img class="editions-image" src="img/editions-4.jpg" alt>
+                    <source srcset="img/editions-4.webp" media="(min-width: 1920px)">
+                    <img class="editions-image" src="img/editions-4.webp" alt>
                   </picture>
                   <div class="slide-content flex">
                     <h3 class="editions__right-title">
@@ -1476,8 +1499,8 @@
 
                 <div class="editions__slide">
                   <picture>
-                    <source srcset="img/editions-5.jpg" media="(min-width: 1920px)">
-                    <img class="editions-image" src="img/editions-5.jpg" alt>
+                    <source srcset="img/editions-5.webp" media="(min-width: 1920px)">
+                    <img class="editions-image" src="img/editions-5.webp" alt>
                   </picture>
                   <div class="slide-content flex">
                     <h3 class="editions__right-title">
@@ -1495,8 +1518,8 @@
 
                 <div class="editions__slide">
                   <picture>
-                    <source srcset="img/editions-6.jpg" media="(min-width: 1920px)">
-                    <img class="editions-image" src="img/editions-6.jpg" alt>
+                    <source srcset="img/editions-6.webp" media="(min-width: 1920px)">
+                    <img class="editions-image" src="img/editions-6.webp" alt>
                   </picture>
                   <div class="slide-content flex">
                     <h3 class="editions__right-title">
@@ -1514,8 +1537,8 @@
 
                 <div class="editions__slide">
                   <picture>
-                    <source srcset="img/editions-7.jpg" media="(min-width: 1920px)">
-                    <img class="editions-image" src="img/editions-7.jpg" alt>
+                    <source srcset="img/editions-7.webp" media="(min-width: 1920px)">
+                    <img class="editions-image" src="img/editions-7.webp" alt>
                   </picture>
                   <div class="slide-content flex">
                     <h3 class="editions__right-title">
@@ -1720,20 +1743,6 @@
       </div>
     </footer>
   </main>
-  <script src="js/header-swiper.min.js"></script>
-  <script src="js/setting.js"></script>
-  <script src="js/simplebar.min.js"></script>
-  <script src="js/burger.js"></script>
-  <script src="js/choices.min.js"></script>
-  <script src="js/accordion.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-  <script src="js/gallery-swiper.min.js"></script>
-  <script src="js/inputmask.min.js"></script>
-  <script src="js/just-validate.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/tooltip.min.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?&lang=ru_RU"></script>
-  <script src="js/file.js"></script>
 </body>
 
 </html>

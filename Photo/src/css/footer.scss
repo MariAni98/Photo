@@ -1,0 +1,225 @@
+@import "_variables.scss";
+@import "_mixin.scss";
+
+.footer {
+    height: 106px;
+    margin-top: 40px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    background-color: $colorGray;
+
+    &__container {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 59px;
+    }
+
+    &__left {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        padding-top: 3px;
+
+        &-span {
+            display: block;         
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: $colorLiteGray;
+        }
+    }
+
+    &__center {
+        grid-column: 5 / 10;
+        max-width: 370px;
+
+        &-descr {
+            @include Roboto;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: $colorGrayC;
+        }
+
+        &-span {
+            @include Roboto;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: $colorGray6;
+        }
+    }
+
+    &__right {
+        grid-column: 10 / 13;
+
+        &-span {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 8px;
+            text-align: right;
+            @include Roboto;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: $colorGrayC;
+        }
+
+        &-list {
+            display: flex;
+            width: 145px;
+            margin-left: auto;
+        }
+
+        &-item {
+            margin-right: 21px;
+        }
+
+        &-item:last-child {
+            margin-right: 0;
+        }
+
+        &-link path {
+            transition: fill 0.3s ease;
+        }
+
+        &-link:hover path {
+            fill: $colorOrange;
+        }
+
+        &-link:focus {
+            outline: none;            
+        }
+
+        &-link:focus path {
+            outline: none;            
+            fill: $colorDarkOrange2;
+        }
+
+        &-link:active path {
+            fill: $colorDarkOrange;
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    .footer {
+        &__container {
+            gap: 0px;
+        }
+
+        &__left {
+            grid-column: 1 / 4;
+            padding-top: 7px;
+
+            img {
+                width: 166px;
+            }
+        }
+
+        &__center {
+            grid-column: 4 / 10;
+            grid-row: 1 / 2;
+            max-width: 352px;
+            margin-left: auto;
+
+            &-descr {
+                word-spacing: -0.09px;
+            }
+        }
+
+        &__right {
+            grid-column: 10 / 13;
+            grid-row: 1 / 2;
+            margin-right: 4px;
+
+            &-span {
+                text-align: right;
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .footer {
+        padding-top: 23px;
+
+        &__container {
+            padding-left: 27px;
+            padding-right: 22px;
+        }
+
+        &__left {
+            grid-column: 1 / 7;
+            padding-top: 8px;
+        }
+
+        &__center {
+            display: none;
+        }
+
+        &__right {
+            grid-column: 8 / 13;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        margin-top: 20px;
+        padding: 0;
+        background-color: transparent;
+
+        &__container {
+            grid-template-rows: 1fr;
+            padding: 0;
+        }
+
+        &__left {
+            grid-column: 1 / 13;
+            grid-row: 2 / 3;
+            width: 100%;
+            height: 62px;
+            padding-top: 14px;
+            background-color: $colorGray2;
+
+            img {
+                display: block;
+                width: 111px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 4px;
+            }
+
+            &-span {
+                display: block;
+                width: 169px;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 10px;
+                line-height: 13px;
+            }
+        }
+
+        &__right {
+            grid-column: 1 / 13;
+            grid-row: 1 / 2;
+            height: 123px;
+            width: 100%;
+            padding-top: 31px;
+            background: $colorGray;
+
+            &-span {
+                display: block;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+
+            &-list {
+                width: 134px;
+                margin-left: auto;
+                margin-right: auto;
+            }            
+        }
+    }
+}

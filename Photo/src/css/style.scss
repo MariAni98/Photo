@@ -1,0 +1,17 @@
+@import 'global.scss';
+@import 'header.scss';
+@import 'hero.scss';
+@import 'studio.scss';
+@import 'project.scss';
+@import 'contacts.scss';
+@import 'footer.scss';
+@import '_variables.scss';
+@import '_mixin.scss';
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}

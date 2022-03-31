@@ -1,0 +1,475 @@
+@import "_variables.scss";
+@import "_mixin.scss";
+
+.contacts {
+  &__container {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 24px 1fr;
+    margin-top: 66px;
+  }
+
+  &__title {
+    grid-column: 1 / 13;   
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: $colorGray;
+  }
+
+  &__left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 1 / 9;
+    grid-row: 2 / 3;
+    gap: 30px;
+
+    &-information {
+      z-index: 2;
+      position: relative;
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+      padding: 60px;
+      padding-top: 42%;
+      background-color: $colorGray;
+      opacity: 0.85;
+      transition: opacity 0.3s ease;
+
+      &-close {
+        opacity: 0;
+      }
+
+      &-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: $colorGray6;
+        transition: background-color 0.3s ease;
+      }
+
+      &-btn:hover {
+        background-color: $colorOrange;
+      }
+
+      &-btn:active {
+        background-color: $colorDarkOrange;
+      }
+
+      &-btn:focus {
+        outline: none;        
+        background-color: $colorDarkOrange2;
+      }
+
+      &-btn::before,
+      &-btn::after {
+        content: "";
+        position: absolute;
+        top: 9px;
+        right: 5px;
+        width: 10px;
+        height: 2px;
+        background-color: $colorWhite;
+        transform: rotate(45deg);
+      }
+
+      &-btn::after {
+        transform: rotate(-45deg);
+      }
+
+      &-title {
+        margin-bottom: 5px;       
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 22px;
+        color: $colorWhite;
+      }
+
+      &-descr {
+        position: relative;
+        @include Roboto;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: $colorGrayC;
+
+        svg {
+          position: absolute;
+          bottom: -25px;
+          left: 0;
+        }
+      }
+    }
+
+    &-map {
+      grid-column: 1 / 3;
+      grid-row: 1 / 3;
+      height: 460px;
+      width: 100%;
+    }
+
+    &-map-two {
+      display: none;
+    }
+
+    &-map-three {
+      display: none;
+    }
+
+    [class*="ymaps-2-1"][class*="-ground-pane"] {
+      filter: grayscale(1);
+    }
+
+    &-phone {
+      position: relative;
+    }
+
+    &-phone-span {
+      position: absolute;
+      left: 22px;
+      bottom: -25px;    
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      color: $colorWhite;
+    }
+  }
+
+  &__right {
+    grid-column: 9 / 13;
+    grid-row: 2 / 3;
+    margin-top: -6px;
+    margin-left: 0px;
+
+    &-title {
+      margin-bottom: 4px;     
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 22px;
+      color: $colorGray;
+    }
+
+    &-descr {
+      margin-bottom: 14px;
+      @include Roboto;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: $colorGray9;
+    }
+
+    &-input-one {
+      position: relative;
+
+      .js-validate-error-label {
+        position: absolute;
+        top: 1px;
+        left: 23px;
+        @include Roboto;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 11px;
+        color: $colorRed;
+      }
+    }
+
+    &-input {
+      position: relative;
+      width: 100%;
+      height: 50px;
+      margin-bottom: 20px;
+      padding: 15px 23px;
+      border: none;
+      background: $colorLiteGray;
+      @include Roboto;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: $colorGray9;
+      transition-property: color, border;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
+    }
+
+    &-input::placeholder,
+    &-textarea::placeholder {
+      @include Roboto;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: $colorGray9;
+      transition-property: color, border;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
+    }
+
+    &-input:hover:not(:active)::placeholder {
+      color: $colorOrange;
+    }
+
+    &-input:focus {
+     
+      outline: none;
+      border: 1px solid $colorOrange;
+    }
+
+    &-input:active {      
+      outline: none;
+      border: 1px solid transparent;
+    }
+
+    &-textarea {
+      width: 100%;
+      height: 150px;
+      margin-bottom: 15px;
+      padding: 15px 23px;
+      border: none;
+      background: $colorLiteGray;
+      @include Roboto;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: $colorGray9;
+    }
+  }
+
+  &__btn {
+    width: 126px;
+    height: 50px;
+    background-color: $colorOrange;
+    @include Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: $colorWhite;
+    transition-property: background-color, border;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+  }
+
+  &__btn:hover {
+    background-color: $colorDarkOrange2;
+  }
+
+  &__btn:focus {
+    outline: none;    
+    border: 3px solid $colorDarkOrange;
+  }
+
+  &__btn:active {
+    background-color: $colorDarkOrange;
+  }
+}
+
+@media (max-width: 1025px) {
+  .contacts {
+    &__container {
+      grid-template-columns: repeat(11, 1fr);
+      column-gap: 23px;
+    }
+
+    &__left {
+      grid-column: 1 / 8;
+      gap: 0;
+      max-height: 460px;
+
+      &-information {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+        width: 100%;
+        padding: 0;
+        padding-top: 25px;
+        padding-left: 30px;
+        padding-bottom: 20px;
+        min-height: 157px;
+
+        &-descr {
+          max-width: 300px;
+
+          svg {
+            bottom: 0px;
+            left: 92px;
+          }
+        }
+      }
+
+      svg path {
+        fill: $colorOrange;
+      }
+
+      &-phone-span {
+        left: 115px;
+        bottom: 3px;
+        color: $colorOrange;
+      }
+    }
+
+    &__right {
+      grid-column: 8 / 13;
+      max-width: 342px;
+      margin-left: 7px;
+
+      &-title {
+        margin-bottom: 3px;
+      }
+
+      &-textarea {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .contacts {
+    &__container {
+      margin-top: 69px;
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+
+    &__left {
+      grid-column: 1 / 13;
+      grid-row: 2 / 3;
+      gap: 0;
+
+      &-information {
+        padding-right: 13px;
+
+        &-title {
+          margin-bottom: 4px;
+        }
+
+        &-descr {
+          max-width: 410px;
+
+          svg {
+            bottom: -24px;
+            left: 0px;
+          }
+        }
+      }
+
+      &-phone-span {
+        left: 21px;
+        bottom: -24px;
+      }
+    }
+
+    &__right {
+      grid-column: 1 / 13;
+      grid-row: 3 / 4;
+      max-width: 466px;
+      margin-left: 0;
+
+      &-texarea {
+        margin-bottom: 17px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .contacts {
+    &__container {
+      row-gap: 15px;
+      margin-top: 52px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__title {
+      padding-left: 19px;
+      font-size: 18px;
+      line-height: 23px;
+    }
+
+    &__left {
+      max-width: 100%;
+
+      &-information {
+        padding-left: 19px;
+        padding-right: 30px;
+
+        &-btn {
+          top: 18px;
+        }
+
+        &-title {
+          margin-bottom: 10px;
+          font-size: 18px;
+          line-height: 22px;
+        }
+
+        &-descr {
+          font-size: 14px;
+          line-height: 18px;
+
+          svg {
+            bottom: -31px;
+            left: -2px;
+          }
+        }
+      }
+
+      &-phone-span {
+        left: 18px;
+        bottom: -31px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      &-map {
+        display: none;
+      }
+
+      &-map-two {
+        display: block;
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+        height: 472px;
+        width: 100%;
+      }
+
+      &-map-three {
+        display: none;
+      }
+    }
+
+    &__right {
+      max-width: 300px;
+      margin-top: 18px;
+      padding-left: 20px;
+
+      &-title {
+        margin-bottom: 7px;
+        font-size: 18px;
+        line-height: 22px;
+      }
+
+      &-descr {
+        margin-bottom: 15px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      &-input {
+        height: 40px;
+      }
+
+      &-input::placeholder,
+      &-textarea::placeholder {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+
+    &__btn {
+      width: 115px;
+      height: 41px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
